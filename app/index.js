@@ -55,6 +55,43 @@ GenlaravelGenerator.prototype.AskUser = function() {
     getInput.call(this, this.async());
 
 };
+//saving the database details into dbconfig.php
+GenlaravelGenerator.prototype.gitIgnore = function() {
+
+   this.copy('dbconfig.php.tmpl', 'dbconfig.php');
+	
+
+};
+//gitignore configure
+GenlaravelGenerator.prototype.gitIgnore = function() {
+
+	if (this.userInput.useGit) {
+		this.copy('gitignore.tmpl', '.gitignore');
+	}
+
+};
+//setup vagrant
+GenlaravelGenerator.prototype.setVagrant = function() {
+
+	if (this.userInput.enableVagrant) {
+		console.log('Setting Up Vagrant'.green);
+		this.template('Vagrantfile', 'Vagrantfile');
+		this.directory('puppet', 'puppet');
+	}
+
+};
+//check if the database already exists otherwise create it
+GenlaravelGenerator.prototype.createDataBase = function() {
+
+	var done = this.async();
+
+	wordpress.createDBifNotExists(done).on('error', function(err) {
+		console.log('Database does not exist, or crendetials are wrong!'.red);
+		console.log('Make sure you create the database and update the credentials in the /app/database.php');
+		done();
+	});
+
+};
 
 //in order to get the laravel from git repo
 GenlaravelGenerator.prototype.checkoutLaravel = function() {
@@ -278,14 +315,14 @@ var promptForData = function(done) {
 
     prompt([
         prompts.url,
-        prompts.tablePrefix,
         prompts.dbHost,
         prompts.dbName,
         prompts.dbUser,
         prompts.dbPass,
         prompts.larVer,
         prompts.useGit,
-        prompts.larDir
+        prompts.larDir,
+        prompts.enableVagrant
     ], input, function(i) {
         var port = i.url.match(/:[\d]+$/);
         if (port !== null) {
