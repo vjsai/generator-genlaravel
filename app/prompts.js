@@ -27,13 +27,6 @@ module.exports = {
             return value;
         }
     },
-    tablePrefix : {
-        name : 'tablePrefix',
-        description : 'Table prefix:',
-        required : true,
-        default : 'lar_'
-    },
-
     dbHost : {
         name : 'dbHost',
         description : 'Database host:',
@@ -93,6 +86,15 @@ module.exports = {
         default : 'Y',
         pattern : boolRegex,
         before : boolFilter
+    },
+    enableVagrant : {
+		name : 'enableVagrant',
+		description : 'enable Vagrant?',
+		required : true,
+		advanced : true,
+		default : 'N',
+		pattern : boolRegex,
+		before : boolFilter
     }
 
 };
