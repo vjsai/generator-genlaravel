@@ -85,7 +85,7 @@ GenlaravelGenerator.prototype.createDataBase = function() {
 
 	var done = this.async();
 
-	wordpress.createDBifNotExists(done).on('error', function(err) {
+         laravel.createDBifNotExists(done).on('error', function(err) {
 		console.log('Database does not exist, or crendetials are wrong!'.red);
 		console.log('Make sure you create the database and update the credentials in the /app/database.php');
 		done();
