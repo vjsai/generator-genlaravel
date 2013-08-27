@@ -1,0 +1,26 @@
+{
+    "name": "generator-genlaravel",
+    "version": "1.0.0",
+    "description": "A Yeoman generator for Laravel",
+    "keywords": [
+        "yeoman-generator",
+        "laravel",
+        "yeoman",
+        "generator",
+        "cli"
+    ],
+    "main": "app/index.js",
+    "author": "vijay sai 'vijaysaijnv@gmail.com'",
+    "license": "BSD",
+    "dependencies": {
+        "prompt": "~0.2.9",
+        "yeoman-generator": "~0.10.0",
+        "wrench": "~1.4.4",
+        "mysql": "~2.0.0-alpha7",
+        "chalk": "~0.2.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/vijaysai/generator-genlaravel.git"
+    }
+}
