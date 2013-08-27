@@ -10,10 +10,7 @@
         "cli"
     ],
     "main": "app/index.js",
-    "author":{
-    "name": "Vijay Sai",
-    "email": "vijaysaijnv@gmail.com",
-     },
+    "author": "vijay sai 'vijaysaijnv@gmail.com'",
     "license": "BSD",
     "dependencies": {
         "prompt": "~0.2.9",
