@@ -20,13 +20,13 @@ function loadConfig() {
         });
     }
 
-    fs.exists('db-config.php', function(exists) {
+    fs.exists('dbconfig.php', function(exists) {
         if (exists) {
-            readConfig('db-config.php');
+            readConfig('dbconfig.php');
         } else {
-            fs.exists('../db-config.php', function(exists) {
+            fs.exists('../dbconfig.php', function(exists) {
                 if (exists) {
-                    readConfig('../db-config.php');
+                    readConfig('../dbconfig.php');
                 } else {
                     ee.emit('error', 'Config file does not exist.');
                 }
@@ -46,7 +46,6 @@ function getDbCredentials() {
         db.user   = contents.match(/define\(["']DB_USER["'],[\s]*["'](.*)["']\)/)[1];
         db.pass   = contents.match(/define\(["']DB_PASSWORD["'],[\s]*["'](.*)["']\)/)[1];
         db.host   = contents.match(/define\(["']DB_HOST["'],[\s]*["'](.*)["']\)/)[1];
-        db.prefix = contents.match(/\$table_prefix[\s]*=[\s]*["'](.*)["']/)[1];
 
         ee.emit('done', db);
     }).on('error', function(err) {
