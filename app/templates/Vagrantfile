@@ -31,6 +31,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, :path => "puppet/scripts/create_mysql_user_database.sh"
 
   # Synced Folder
-  config.vm.synced_folder ".", "/home/vagrant/www"
+  config.vm.synced_folder "./<%= userInput.larDir %>", "/home/vagrant/www"
 
 end
