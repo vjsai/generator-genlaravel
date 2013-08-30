@@ -6,6 +6,7 @@ The [Yeoman](https://github.com/yeoman/yeoman) Generator for [Laravel](http://la
 - Dowloading composer
 - installing laravel using composer
 - Configure Database Settings
+- Added vagrant Support
 
 ## How To Use
 
@@ -23,5 +24,5 @@ Follow my prompts inorder to install laravel with ease.
 
 ## Todo
 The features needed to be implemented are:
-- Adding Builtin Vagrant Support
 - Adding Laravel 4 Generators Scaffolding Support
+- To Add Heroku Deployment
