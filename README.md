@@ -26,3 +26,4 @@ Follow my prompts inorder to install laravel with ease.
 The features needed to be implemented are:
 - Adding Laravel 4 Generators Scaffolding Support
 - To Add Heroku Deployment
+- Add memcached and Redis support to vagrant setup
