@@ -17,6 +17,10 @@ If you do not already have the Yeoman installed install it now, and might as wel
 And run me:
 
 	$ yo genlaravel
+	
+In order to use Vagrant run:
+
+        $ yo genlaravel --advanced
 
 Follow my prompts inorder to install laravel with ease.
 
