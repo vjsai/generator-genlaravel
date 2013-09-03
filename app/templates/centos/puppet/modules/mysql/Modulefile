@@ -1,0 +1,8 @@
+name    'rocha-mysql'
+version '0.1.0'
+source 'git://github.com/rochaporto/puppet-mysql'
+author 'rocha'
+license 'Apache License, Version 2.0 (the "License")'
+summary 'Resources to manage a MySQL server installation and its databases'
+description 'This module provides classes and definitions required to install and configure a MySQL server instance, and to manage its databases - db and user creation, permissions, etc.'
+project_page 'http://mysql.com'

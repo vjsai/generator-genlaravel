@@ -1,0 +1,4 @@
+This module provides puppet resources to configure a MySQL server or
+client instance, as well as setting up service databases, users, or other
+MySQL related resources.
+

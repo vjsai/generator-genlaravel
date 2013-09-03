@@ -1,0 +1,39 @@
+{
+  "description": "This module provides classes and definitions required to install and configure a MySQL server instance, and to manage its databases - db and user creation, permissions, etc.",
+  "summary": "Resources to manage a MySQL server installation and its databases",
+  "source": "git://github.com/rochaporto/puppet-mysql",
+  "checksums": {
+    "lib/puppet/type/README.markdown": "34b8c80ba8683afca99f2d28ca7e70b2",
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "spec/unit/puppet/provider/README.markdown": "e52668944ee6af2fb5d5b9e798342645",
+    "manifests/server.pp": "69107648d517aabf37fee2c01225e429",
+    "LICENSE": "0b9a59a492f2014df4c1b4937c683113",
+    "files/README.markdown": "3d44458cc68d8513b51e3b56c604eec4",
+    "lib/puppet/parser/functions/README.markdown": "e596ce938864a80fd1e51640cca7f612",
+    "lib/puppet/provider/README.markdown": "3835801d7626dd8d541c4fdf7ca9f3e4",
+    "README": "5bd33da4e727289c0653bad4c6468821",
+    "manifests/README.markdown": "b9970454391883e36b55137328792a55",
+    "templates/README.markdown": "aada0a1952329e46b98695349dba6203",
+    "manifests/db.pp": "d965f50f3ca8b2806d3750a40ba63d92",
+    "tests/init.pp": "6b34827ac4731829c8a117f0b3fb8167",
+    "spec/README.markdown": "32a1fc0121c28aff554ef5d422b8b51e",
+    "manifests/grant.pp": "97f6f9b5d3a577f09a3b7785113c1854",
+    "metadata.json": "d34d0b70aba36510fbc2df4e667479ef",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "manifests/init.pp": "a2e709a980e5247388547cfe83cdd4ef",
+    "lib/puppet/facter/README.markdown": "145e26334b4d80e48e9e55ba78800579",
+    "Modulefile": "805561e48533b88bf6aec137a8a04dc3",
+    "spec/unit/puppet/type/README.markdown": "de26a7643813abd6c2e7e28071b1ef94"
+  },
+  "types": [
+
+  ],
+  "project_page": "http://mysql.com",
+  "author": "rocha",
+  "version": "0.1.0",
+  "license": "Apache License, Version 2.0 (the \"License\")",
+  "dependencies": [
+
+  ],
+  "name": "rocha-mysql"
+}

@@ -1,0 +1,41 @@
+{
+  "description": "Manage cli, apache and fpm version of php via puppet",
+  "source": "UNKNOWN",
+  "types": [
+
+  ],
+  "project_page": "https://github.com/saz/puppet-php",
+  "version": "1.0.4",
+  "checksums": {
+    "manifests/fpm/pool.pp": "20d308420c73ba6ceafc1cd9c10d68ab",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "manifests/fpm/install.pp": "0de9f63442afbeed4f0803c229c4f27a",
+    "manifests/apache2.pp": "fce439781366de3c3f0b80911904d4eb",
+    "manifests/install.pp": "2e58900a0523edbfcfe8353f1b0b6038",
+    "templates/fpm-pool.conf.erb": "ea83595b278ed6ae66b24a0b643a2673",
+    "LICENSE": "d6869a585931245be85fd4aece485172",
+    "manifests/fpm/service.pp": "8f4bd48ee212de5d2e73950f48da334b",
+    "EXAMPLE": "a2b51ebf084e72eb3c5c83426e87fdde",
+    "manifests/init.pp": "4f202005e98cbf1dddbd157514c524b5",
+    "manifests/params.pp": "9e7c4e3da74a37b7bfc2c86974e6716d",
+    "tests/init.pp": "779f99177c50609dacd977a32023d4dd",
+    "manifests/fpm/config.pp": "96608eeece9812173baf7f39fbf854a1",
+    "manifests/apache2/config.pp": "5f5d62b5f2eabece2b54b18529322517",
+    "manifests/conf.pp": "ef35b76e2cea37b573a6905e112efad0",
+    "manifests/module.pp": "a114492f23b072f5d9050f4e5c9ac9e7",
+    "manifests/fpm.pp": "b2db8314bdedd5c3c68eaf6691788c99",
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "manifests/apache2/install.pp": "77abe6dc95193b480472f24c0d676b9f",
+    "README.md": "4f8ac57552ec3556c371dfdb5a9cc07b",
+    "manifests/extra.pp": "e49571908ceb0aefcfc14cbe65457d68",
+    "manifests/config.pp": "bff9a0ba6793cfe90526b16e04e5c86b",
+    "Modulefile": "b690c3c2853f0cd31d49f393d335e564"
+  },
+  "author": "saz",
+  "name": "saz-php",
+  "dependencies": [
+
+  ],
+  "license": "Apache License, Version 2.0",
+  "summary": "UNKNOWN"
+}
