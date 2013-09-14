@@ -20,7 +20,7 @@ And run me:
 	
 In order to use Vagrant run:
   
-  $ yo genlaravel --advanced
+       $ yo genlaravel --advanced
 
 Follow my prompts inorder to install laravel with ease.
 
