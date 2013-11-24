@@ -43,13 +43,14 @@ module.exports = {
     dbUser : {
         name : 'dbUser',
         description : 'Database user:',
-        required : true
+        required : true,
+        default : 'root'
     },
 
     dbPass : {
         name : 'dbPass',
         description : 'Database password:',
-        required : true
+        default : ''
     },
 
     useGit : {
