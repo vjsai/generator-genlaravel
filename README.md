@@ -1,6 +1,7 @@
 # GenLaravel
 
-[![NPM](https://nodei.co/npm/generator-genlaravel.png?downloads=true)](https://nodei.co/npm/generator-genlaravel/)[![NPM](https://nodei.co/npm-dl/generator-genlaravel.png?months=3)](https://nodei.co/npm/generator-genlaravel/)
+[![NPM](https://nodei.co/npm/generator-genlaravel.png?downloads=true)](https://nodei.co/npm/generator-genlaravel/) [![NPM](https://nodei.co/npm-dl/generator-genlaravel.png?months=3)](https://nodei.co/npm/generator-genlaravel/)
+
 The [Yeoman](https://github.com/yeoman/yeoman) Generator for [Laravel](http://laravel.com/).  Genlaravel takes you from scratching your head wondering where to start, all the way to running laravel in few minutes.  I have configuration options that will help deploy and get started with laravel with ease.
 
 - Downloading laravel
