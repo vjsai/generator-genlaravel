@@ -33,6 +33,14 @@ module.exports = {
         required : true,
         default : 'localhost'
     },
+    
+    secretKey : {
+        name : 'secretKey',
+        description : 'Generate an encryption key for app.php?',
+        default : 'Y',
+        pattern : boolRegex,
+        before : boolFilter
+    },
 
     dbName : {
         name : 'dbName',

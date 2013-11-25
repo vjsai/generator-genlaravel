@@ -42,6 +42,8 @@ var GenlaravelGenerator = module.exports = function GenlaravelGenerator(args, op
             this.log.conflict(message);
         }
     };
+    //Constructor mod
+        this.secretKey = this.makeSecretKey();
 };
 
 util.inherits(GenlaravelGenerator, yeoman.generators.Base);
@@ -62,6 +64,15 @@ GenlaravelGenerator.prototype.gitIgnore = function() {
 	
 
 };
+
+//saving the application configuration into app.php
+GenlaravelGenerator.prototype.gitIgnore = function() {
+
+   this.copy('app.php.tmpl', 'app.php');
+	
+
+};
+
 //gitignore configure
 GenlaravelGenerator.prototype.gitIgnore = function() {
 
@@ -158,7 +169,21 @@ GenlaravelGenerator.prototype.configDB = function(){
      this.copy('database.php.tmpl','app/config/database.php');
      //startServer(this);
      done();
-}
+};
+
+GenlaravelGenerator.prototype.makeSecretKey = function(){
+     this.copy('app.php.tmpl','app/config/app.php');
+     //var done = this.async();
+     var mask = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~`!@#$%^&*()_+-={}[]:";\'<>?,./|\\';
+     var result = '';
+     for (var i = 32; i > 0; --i) result += mask[Math.round(Math.random() * (mask.length - 1))];
+     return result;
+     
+    //done();
+
+};
+
+
 
 GenlaravelGenerator.prototype.initialiseGit = function() {
 
@@ -315,6 +340,7 @@ var promptForData = function(done) {
 
     prompt([
         prompts.url,
+        prompts.secretKey,
         prompts.dbHost,
         prompts.dbName,
         prompts.dbUser,
@@ -345,6 +371,7 @@ function confirmInput(done) {
     console.log('\n----------------------------'.red);
 
     logConfirmation('Laravel URL', this.userInput.url);
+    logConfirmation('Secret key', this.secretKey);
     logConfirmation('Database host', this.userInput.dbHost);
     logConfirmation('Database name', this.userInput.dbName);
     logConfirmation('Database user', this.userInput.dbUser);
