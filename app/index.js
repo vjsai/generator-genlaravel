@@ -174,7 +174,7 @@ GenlaravelGenerator.prototype.configDB = function(){
 GenlaravelGenerator.prototype.makeSecretKey = function(){
      this.copy('app.php.tmpl','app/config/app.php');
      //var done = this.async();
-     var mask = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~`!@#$%^&*()_+-={}[]:";\'<>?,./|\\';
+     var mask = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~`!@#$%^&*()_+-={}[]:";<>?,./|\\';
      var result = '';
      for (var i = 32; i > 0; --i) result += mask[Math.round(Math.random() * (mask.length - 1))];
      return result;
