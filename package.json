@@ -1,6 +1,6 @@
 {
     "name": "generator-genlaravel",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A Yeoman generator for Laravel",
     "keywords": [
         "yeoman-generator",
@@ -10,8 +10,8 @@
         "cli"
     ],
     "main": "app/index.js",
-    "author": "vijay sai 'vijaysaijnv@gmail.com'",
-    "license": "BSD",
+    "author": "vijay sai",
+    "license": "MIT",
     "dependencies": {
         "prompt": "~0.2.9",
         "yeoman-generator": "~0.10.0",
