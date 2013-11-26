@@ -159,7 +159,11 @@ GenlaravelGenerator.prototype.installComposer = function(){
             console.log('child process exited with code ' + code);
         });
 
+        })
+        .on('error',function(){
+           console.log("Unable to find cURL on System");
         });
+
   
  }
 
